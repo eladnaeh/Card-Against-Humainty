@@ -1,12 +1,10 @@
-whiteFile = open("white.txt", "r")
-blackFile = open("black.txt", "r")
+white = open("white.txt", "r")
+black = open("black.txt", "r")
 whiteList = []
 blackList = []
 numOfCards = []
 
 def retrieveData():
-    white = whiteFile
-    black = blackFile
     for line in white.readlines():
        whiteList.append(line[::-1].strip('\n'))
 
